@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, textarea {
+  background: none;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 1.7rem;
+}
+
+h2 {
+  color: #00fff7;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.8px;
+}
+h3 span {
+  color: white;
+}
+
+p {
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+}
+
+p, h3 {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+h1, h3 span {
+  transition: 0.3s ease;
+}
+h1:hover, h3 span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 2.4rem;
+}
+
+.card {
+  background-color: #14253d;
+  border-radius: 1.3rem;
+  padding: 2.4rem;
+  margin: 15.2rem auto 0;
+  max-width: 35rem;
+  min-height: 59.6rem;
+}
+.card__body {
+  border-bottom: 1px solid #2f415b;
+  padding: 2.4rem 0 2.4rem;
+}
+.card__img {
+  position: relative;
+  height: 30.2rem;
+  width: 100%;
+}
+.card__img:hover {
+  cursor: pointer;
+}
+.card__img:hover::before {
+  opacity: 1;
+}
+.card__img::before {
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 1rem;
+  content: url("/../images/icon-view.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+.card__img img {
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+}
+.card__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__details h2, .card__details h3 {
+  display: flex;
+  align-items: center;
+}
+.card__icon--ethereum {
+  margin-right: 0.7rem;
+}
+.card__icon--clock {
+  margin-right: 0.6rem;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+}
+.card__avatar {
+  margin-right: 1.5rem;
+  height: 3.4rem;
+  width: 3.4rem;
+}
